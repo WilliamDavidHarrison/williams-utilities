@@ -1,5 +1,17 @@
 {
-    "activityType": "", // "LISTENING", "PLAYING", "STREAMING", "WATCHING"
+    "activityType": "",
+    "activityTypeExamples": [
+        "LISTENING",
+        "PLAYING",
+        "STREAMING",
+        "WATCHING"
+    ], 
     "activity": "",
-    "status": "ONLINE" // "DND", "IDLE", "ONLINE", "INVISIBLE"
+    "status": "ONLINE",
+    "statusExamples": [
+        "DND",
+        "IDLE",
+        "ONLINE",
+        "INVISIBLE"
+    ],
 }
