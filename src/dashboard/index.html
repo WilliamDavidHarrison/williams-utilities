@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>William's Utilities</title>
+
+        <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    </head>
+
+    <body>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "Ubuntu", sans-serif;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+
+            body {
+                height: 100vh;
+                background-color: #5865F2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .profile-card {
+                width: 400px;
+                text-align: center;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .card-header {
+                background-color: #2c3a47;
+                padding: 40px 40px;
+            }
+
+            .picture {
+                display: inline-block;
+                padding: 8px;
+                margin: auto;
+                border-radius: 50%;
+            }
+
+            .picture img {
+                display: block;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+            .name {
+                color: #ffffff;
+                font-size: 28px;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+
+            .invite-btn {
+                display: inline-block;
+                padding: 12px 50px;
+                color: #ffffff;
+                border: 2px solid #5865F2;
+                border-radius: 30px;
+                margin-top: 16px;
+                margin-bottom: -100px;
+                transition: .3s linear;
+            }
+
+            .invite-btn:hover {
+                background: #5865F233;
+            }
+
+            .card-footer {
+                background: #2c3a47;
+                margin-top: -20px;
+                padding: 30px 10px;
+            }
+
+            .stats {
+                display: flex;
+                align-items: center;
+            }
+
+            .item {
+                flex: 1;
+                font-size: 16px;
+                color: #ffffff;
+            }
+
+            .item span {
+                display: block;
+                font-size: 28px;
+            }
+
+            .text {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                text-transform: uppercase;
+            }
+
+            .border {
+                width: 1px;
+                height: 50px;
+                background: #ffffff
+            }
+        </style>
+
+        <div class="profile-card">
+            <div class="card-header">
+                <div class="picture">
+                    <img src="{avatar}">
+                </div>
+
+                <div class="name">{username}</div>
+                <a href="https://discord.com/api/oauth2/authorize?client_id={client-id}&permissions=537259089&scope=bot%20applications.commands" class="invite-btn">Invite Me</a>
+            </div>
+
+            <div class="card-footer">
+                <div class="stats">
+                    <div class="item">
+                        <span class="counter1">{guilds}</span>
+                        <div class="text">Guilds</div>
+                    </div>
+
+                    <div class="border"></div>
+
+                    <div class="item">
+                        <span class="counter2">{ping}ms</span>
+                        <div class="text">Latency</div>
+                    </div>
+
+                    <div class="border"></div>
+
+                    <div class="item">
+                        <span class="counter3">{users}</span>
+                        <div class="text">Users</div>
+                    </div>
+
+                    <script>
+                        const counterUp = window.counterUp.default;
+
+                        const callback = entries => {
+                            entries.forEach(entry => {
+                                const el = entry.target;
+
+                                if(entry.isIntersecting && ! el.classList.contains("is-visible")) {
+                                    counterUp(el, {
+                                        duration: 250,
+                                        delay: 10,
+                                    })
+
+                                    el.classList.add("is-visible");
+                                }
+                            })
+                        }
+
+                        const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+                        const el1 = document.querySelector(".counter1");
+                        const el2 = document.querySelector(".counter2");
+                        const el3 = document.querySelector(".counter3");
+
+                        IO.observe(el1);
+                        IO.observe(el2);
+                        IO.observe(el3);
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
