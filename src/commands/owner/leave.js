@@ -40,10 +40,10 @@ module.exports = {
                 return;
             }
 
-            if(guild.id === client.config.testGuildId) {
+            if(guild.id === process.env.testGuildId) {
                 const error4 = new Discord.MessageEmbed()
                     .setColor(client.embeds.errorColor)
-                    .setDescription(`${emoji.error} You can not make me leave the test guild!`)
+                    .setDescription(`${emoji.error} I cannot leave the test guild!`)
 
                 message.reply({ embeds: [error4] });
                 return;
