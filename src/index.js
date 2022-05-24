@@ -4,10 +4,8 @@ const client = new Discord.Client({ intents: 32767 });
 require("dotenv").config();
 
 const dashboard = require("./dashboard/server");
-const api = require("./api/server");
 
 dashboard(client);
-api(client);
 
 client.config = require("./configs/main.json");
 client.embeds = require("./configs/embeds.json");
