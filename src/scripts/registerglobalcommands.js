@@ -4,8 +4,7 @@ const fs = require("node:fs");
 
 require("dotenv").config();
 
-const config = require("../configs/main.json");
-const clientId = config.clientId;
+const clientId = processs.env.clientId;
 
 const slashCommands = [];
 
