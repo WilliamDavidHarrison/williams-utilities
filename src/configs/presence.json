@@ -1,5 +1,5 @@
 {
-    "activityType": "LISTENING",
-    "activity": "William#0001",
-    "status": "ONLINE"
+    "activityType": "", // "LISTENING", "PLAYING", "STREAMING", "WATCHING"
+    "activity": "",
+    "status": "ONLINE" // "DND", "IDLE", "ONLINE", "INVISIBLE"
 }
