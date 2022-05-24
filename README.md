@@ -1,6 +1,12 @@
 # William's Utilities
 Discord Utility Bot
 
+## Website
+https://bot.williamharrison.dev
+
+## API
+Coming Soon | https://api.bot.williamharrison.dev
+
 ## Notes
 The database must be MongoDB to work correctly.
 
