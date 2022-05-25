@@ -2,10 +2,10 @@
 Discord Utility Bot
 
 ## Website
-https://bot.williamharrison.dev
+https://bot.williamharrison.xyz:8019
 
 ## API
-Coming Soon | https://api.bot.williamharrison.dev
+Coming Soon
 
 ## Notes
 Some folders are empty which GitHub doesn't allow, so GitHub deletes them, but without them the bot may crash.
