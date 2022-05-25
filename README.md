@@ -2,7 +2,7 @@
 Discord Utility Bot
 
 ## Website
-https://bot.williamharrison.xyz:8019
+http://bot.williamharrison.xyz:8019
 
 ## API
 Coming Soon
