@@ -3,7 +3,7 @@
 # William's Utilities
 Discord Utility Bot
 
-This bot is currently a private bot, but I might make it public in the future or create a seperate bot with the similar features but more flexibility.
+This bot is currently a private bot, but I might make it public in the future.
 
 ## Website
 https://bot.williamharrison.dev
