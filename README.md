@@ -14,6 +14,7 @@ https://bot.williamharrison.dev
 API so no need for the main config files.
 More image commands.
 Proper website hosting with the API supplying latency, guild, user info.
+Move more IDs and values to .env
 ```
 
 ## Notes
