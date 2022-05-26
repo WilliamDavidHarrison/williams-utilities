@@ -1,4 +1,4 @@
-https://img.shields.io/uptimerobot/status/m791858381-69136b76cb9eee94f12249fc?label=Bot&style=for-the-badge
+![Bot Status](https://img.shields.io/uptimerobot/status/m791858381-69136b76cb9eee94f12249fc?label=Bot&style=for-the-badge)
 
 # William's Utilities
 Discord Utility Bot
