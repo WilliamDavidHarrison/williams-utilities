@@ -6,8 +6,13 @@ Discord Utility Bot
 ## Website
 https://bot.williamharrison.dev
 
-## API
-Coming Soon
+## Planned Features
+
+```
+API so no need for the main config files.
+More image commands.
+Proper website hosting with the API supplying latency, guild, user info.
+```
 
 ## Notes
 Some folders are empty which GitHub doesn't allow, so GitHub deletes them, but without them the bot may crash.
