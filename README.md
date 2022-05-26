@@ -8,9 +8,9 @@ This bot is currently a private bot, but I might make it public in the future.
 ## Planned Features
 
 ```
-API so no need for the main config files.
-More image commands.
-Proper website hosting with the API supplying latency, guild, user info.
+Create an API so then there is no need for the main config files
+More image commands
+Proper website hosting with the API supplying values.
 Move more IDs and values to .env
 ```
 
