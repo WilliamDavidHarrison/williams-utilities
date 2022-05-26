@@ -5,9 +5,6 @@ Discord Utility Bot
 
 This bot is currently a private bot, but I might make it public in the future.
 
-## Website
-https://bot.williamharrison.dev
-
 ## Planned Features
 
 ```
