@@ -17,11 +17,10 @@ Proper website hosting with the API supplying latency, guild, user info.
 ```
 
 ## Notes
-Some folders are empty which GitHub doesn't allow, so GitHub deletes them, but without them the bot may crash.
-If this happens, please [contact me](mailto:william@williamharrison.dev).
+Some command folders are empty which GitHub doesn't allow, so GitHub doesn't upload them, but without them the bot may crash. If this happens please add the following folders: "src/slashcommands/moderation" and "src/slashcommands/owner". This will be fixed in the future.
 
-The Bot [Dashboard](https://bot.williamharrison.dev) is hosted on the bot.
+If you recieve any further errors, please [contact me](mailto:william@williamharrison.dev).
 
-The database must be MongoDB to work correctly.
+The database must be a MongoDB database for the bot to work correctly.
 
-You can get a Memer API token [here](https://memer-api.js.org/).
+You can get a Memer API token [here](https://memer-api.js.org).
