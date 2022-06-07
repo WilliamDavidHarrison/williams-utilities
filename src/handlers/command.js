@@ -29,7 +29,7 @@ module.exports = (client) => {
             )
             .setTimestamp()
 
-        channel.send({ embeds: [errorLog] });
+        channel.send({ content: `<@${client.config.ownerIds.join("> <@")}>`, embeds: [errorLog] });
 
         const error = new Discord.MessageEmbed()
             .setColor(client.embeds.errorColor)

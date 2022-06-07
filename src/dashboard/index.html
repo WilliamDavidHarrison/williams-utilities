@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>William's Utilities</title>
+
+        <title>{username}</title>
 
         <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
     </head>
@@ -28,7 +29,7 @@
             }
 
             .profile-card {
-                width: 400px;
+                width: 370px;
                 text-align: center;
                 border-radius: 10px;
                 overflow: hidden;
@@ -105,7 +106,7 @@
             .border {
                 width: 1px;
                 height: 50px;
-                background: #ffffff
+                background: #ffffff;
             }
         </style>
 
@@ -129,14 +130,7 @@
                     <div class="border"></div>
 
                     <div class="item">
-                        <span class="counter2">{ping}ms</span>
-                        <div class="text">Latency</div>
-                    </div>
-
-                    <div class="border"></div>
-
-                    <div class="item">
-                        <span class="counter3">{users}</span>
+                        <span class="counter2">{users}</span>
                         <div class="text">Users</div>
                     </div>
 
@@ -160,13 +154,11 @@
 
                         const IO = new IntersectionObserver(callback, { threshold: 1 });
 
-                        const el1 = document.querySelector(".counter1");
+                        const el1 = document.querySelector(".counter1");;
                         const el2 = document.querySelector(".counter2");
-                        const el3 = document.querySelector(".counter3");
 
                         IO.observe(el1);
                         IO.observe(el2);
-                        IO.observe(el3);
                     </script>
                 </div>
             </div>

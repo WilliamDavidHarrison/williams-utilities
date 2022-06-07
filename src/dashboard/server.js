@@ -10,6 +10,7 @@ module.exports = (client) => {
 
         stats = stats.replace("{avatar}", client.user.avatarURL({ format: "png", dynamic: true }));
         stats = stats.replace("{username}", client.user.username);
+        stats = stats.replace("{username}", client.user.username);
         stats = stats.replace("{client-id}", client.user.id);
         stats = stats.replace("{ping}", client.ws.ping);
         stats = stats.replace("{guilds}", client.guilds.cache.size);

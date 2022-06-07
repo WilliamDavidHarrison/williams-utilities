@@ -7,7 +7,7 @@ module.exports = {
 	name: "messageCreate",
 	async execute(client, Discord, message) {
         try {
-            if(message.author.bot) return;
+            if(message.author.bot) return;            
 
             const requiredPerms = ["SEND_MESSAGES", "EMBED_LINKS"];
 
