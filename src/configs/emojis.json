@@ -1,14 +1,11 @@
 {
-    "dnd": "",
-    "error": "",
-    "icon": "",
-    "icon_circle": "",
-    "idle": "",
-    "information": "",
-    "new": "",
-    "offline": "",
-    "online": "",
-    "pingpong": "",
-    "successful": "",
-    "wave": ""
+    "dnd": ":red_circle:",
+    "error": ":x:",
+    "idle": ":orange_circle:",
+    "information": ":information_source:",
+    "offline": ":black_circle:",
+    "online": ":green_circle:",
+    "pingpong": ":ping_pong:",
+    "successful": ":white_check_mark:",
+    "wave": ":wave:"
 }
